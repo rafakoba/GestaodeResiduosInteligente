@@ -15,6 +15,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -74,7 +75,10 @@ fun LayoutScreen()  {
             ) {
                 Button(
                     onClick = { /*TODO*/ },
-                    modifier = Modifier
+                    modifier = Modifier,
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFF4E802D)
+                    )
                 ) {
 
                     Text(
@@ -90,11 +94,15 @@ fun LayoutScreen()  {
             ) {
                 Button(
                     onClick = { /*TODO*/ },
-                    modifier = Modifier
-                ) {
+                    modifier = Modifier,
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFF4E802D)
+                    )
+                ){
                     Text(
                         text = "   Papel   ",
-                        fontSize = 30.sp)
+                        fontSize = 30.sp
+                    )
                 }
             }
         }
@@ -111,7 +119,10 @@ fun LayoutScreen()  {
             ) {
                 Button(
                     onClick = { /*TODO*/ },
-                    modifier = Modifier
+                    modifier = Modifier,
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFF4E802D)
+                    )
                 ) {
 
                     Text(
@@ -128,7 +139,10 @@ fun LayoutScreen()  {
             ) {
                 Button(
                     onClick = { /*TODO*/ },
-                    modifier = Modifier
+                    modifier = Modifier,
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFF4E802D)
+                    )
                 ) {
                     Text(
                         text = "   Metal   ",
@@ -142,7 +156,13 @@ fun LayoutScreen()  {
             verticalAlignment = Alignment.Bottom
 
         ) {
-            Button(onClick = { /*TODO*/ }) {
+            Button(
+                onClick = { /*TODO*/ },
+                modifier = Modifier,
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFF4E802D)
+                )
+                ) {
                 Text(
                     text = "Continuar",
                     fontSize = 26.sp)
